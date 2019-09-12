@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timed Trivia!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<div>
+<h1>Awesome Animal Trivia!</h1>
+<div id="timeContainer">Time Remaining: <span id="timer">20</span> </div>
+
+<form>
+  <h3>What semi-aquatic, egg laying mammal, is native to Australia and Tasmania?</h3>
+  <input type="radio" name="mammal" value="Platypus">Platypus
+  <input type="radio" name="mammal" value="Duck">Duck
+  <input type="radio" name="mammal" value="Ostrich">Ostrich
+  <input type="radio" name="mammal" value="Kangaroo">Kangaroo
+
+  <h3>What is the term for a group of kangaroos?</h3>
+  <input type="radio" name="kangaroos" value="Heard">Heard
+  <input type="radio" name="kangaroos" value="School">School
+  <input type="radio" name="kangaroos" value="Mob">Mob
+  <input type="radio" name="kangaroos" value="Flock">Flock
+
+  <h3>Orcinus orca is the scientific name for which animal?</h3>
+  <input type="radio" name="whales" value="Killer Whale">Killer Whale
+  <input type="radio" name="whales" value="Humpback Whale">Humpback Whale
+  <input type="radio" name="whales" value="Great White Shark">Great White Shark
+  <input type="radio" name="whales" value="Sea Lion">Sea Lion
+
+  <h3>Which bird has eyes that are larger than its brain?</h3>
+  <input type="radio" name="brain" value="Penguin">Penguin
+  <input type="radio" name="brain" value="Ostrich">Ostrich
+  <input type="radio" name="brain" value="Owl">Owl
+  <input type="radio" name="brain" value="Hawk">Hawk
+
+  <h3>What is the name for the offspring of a male lion and a female tiger?</h3>
+  <input type="radio" name="offspring" value="Kitten">Kitten
+  <input type="radio" name="offspring" value="Tion">Tion
+  <input type="radio" name="offspring" value="Liger">Liger
+  <input type="radio" name="offspring" value="Mufasa">Mufasa
+
+  <h3>What is the only snake in the world that builds a nest for its eggs?</h3>
+  <input type="radio" name="snake" value="Rattle Snake">Rattle Snake
+  <input type="radio" name="snake" value="Viper">Viper
+  <input type="radio" name="snake" value="King Cobra">King Cobra
+  <input type="radio" name="snake" value="Milk Snake">Milk Snake
+<br>
+<br>
+  <button type="button" id="submitBtn">Submit</button>
+
+<div id="results">
+    
+   <p>Correct Answers: <span id="correctCount"></span></p>
+    <p>Incorrect: <span id="incorrectCount"></span></p>
+    <p>Unanswered: <span id="unansweredCount"></span></p>
+</div>
+
+</form>
+<div id="answerSection"></div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
