@@ -18,24 +18,21 @@ function run() {
     //  Once number hits zero...
     if (number === 0) {
 
-        //  ...run the stop function.
+        //Stops the function
         stop();
-
-        //  Alert the user that time is up.
         alert("Time Up!");
       }
     }
 
     //  The stop function
     function stop() {
-
-      //  Clears our intervalId
-      //  We just pass the name of the interval
-      //  to the clearInterval function.
       clearInterval(intervalId);
     }
 
+    
+
     //  Execute the run function.
     run();
+
 
     
